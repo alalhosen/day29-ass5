@@ -1,0 +1,76 @@
+#banner-lime {
+    color: lime
+}
+
+#banner-btn {
+    background: lime;
+}
+
+#banner-section {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 1170px;
+}
+
+#btn-see-all {
+    border: 2px solid lime;
+    color: lime;
+}
+
+#select-icon,
+#route,
+#departure,
+#greenline {
+    justify-content: space-between;
+}
+
+#stiarings {
+    margin-left: 40em;
+}
+
+#ticket-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+    column-gap: 15px;
+    margin-left: 36px;
+    }
+
+#ticket {
+    text-align: center;
+    font-size: 15px;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: rgb(230, 225, 225);
+}
+
+#seat-class-price {
+    justify-content: space-between;
+}
+
+#seat-0 {
+    background-color: lime;
+    color: white;
+}
+
+.grand-total,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+#apply {
+    background-color: lime;
+    border: none;
+}
+
+.input {
+    border: 1px solid grey;
+}
+
+#btn-next {
+    background-color: lime;
+    width: 13em;
+    border-radius: 5px;
+}
