@@ -10,72 +10,78 @@
     <link rel="stylesheet" href="bus-ticket.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar bg-base-100">
-            <div class="navbar-start">
-                <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn bg-green-100 text-green-500 border-1 border-green-400">Bus <img src="images/bus-icon.png"
-                        alt=""></a>
-            </div>
-        </nav>
-    </header>
+<body class="w-[1440px]">
+
     <main>
-        <!-- banner section -->
-        <section id="banner-section" class="mt-4 h-full p-8">
-            <!-- <img src="images/banner.png" alt=""> -->
-            <div class="text-center space-y-8 mt-8">
-                <h1 class="text-6xl text-white text-bold">End-to-End Travel with</h1>
-                <h2 id="banner-lime" class="text-6xl text-bold">P Paribahan</h2>
-                <p class="text-white">All of you are welcome to our reputed transport company.Click below to get
-                    preferred seat.</br> Some
-                    of our P transport services are mentioned below</p>
-                <button id="banner-btn" class="btn text-semibold">Buy Tickets</button>
-            </div>
-        </section>
-        <!-- Best offer section -->
-        <section class="mt-20 text-center">
-            <h1 class="text-center text-4xl font-bold text-">Best offers for you</h1>
-            <div class="flex p-8">
-                <div class="flex mr-12 bg-yellow-500 rounded-xl">
-                    <div class="py-16 px-8">
-                        <h2 class="text-4xl font-bold">15% OFF</h2>
-                        <p class="text-2xl font-bold">on your next purchase</p>
-                        <p>use by June 2024</p>
+        <section class="p-12">
+            <!-- header section -->
+            <header>
+                <nav class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
                     </div>
-                    <img src="images/cupon-devider.png" alt="">
-                    <div class="py-24 px-8">
-                        <h2 class="text-xl font-bold">NEW15</h2>
-                        <p>Coupon Code</p>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn bg-green-100 text-green-500 border-1 border-green-400">Bus <img
+                                src="images/bus-icon.png" alt=""></a>
+                    </div>
+                </nav>
+            </header>
+            <!-- banner section -->
+            <section id="banner-section" class="mt-4 h-full">
+                <!-- <img src="images/banner.png" alt=""> -->
+                <div class="text-center space-y-8 mt-8">
+                    <h1 class="text-6xl text-white text-bold">End-to-End Travel with</h1>
+                    <h2 id="banner-lime" class="text-6xl text-bold">P Paribahan</h2>
+                    <p class="text-white">All of you are welcome to our reputed transport company.Click below to get
+                        preferred seat.</br> Some
+                        of our P transport services are mentioned below</p>
+                    <!--BTN BTN   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
+                    <button onclick="play()" id="banner-btn" class="btn text-semibold">Buy Tickets</button>
+                </div>
+            </section>
+            <!-- Best offer section -->
+            <section id="best-section" class="mt-20 text-center">
+                <h1 class="text-center text-4xl font-bold text-">Best offers for you</h1>
+                <div class="flex p-8">
+                    <div class="flex mr-12 bg-yellow-500 rounded-xl">
+                        <div class="py-16 px-8">
+                            <h2 class="text-4xl font-bold">15% OFF</h2>
+                            <p class="text-2xl font-bold">on your next purchase</p>
+                            <p>use by June 2024</p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div class="py-24 px-8">
+                            <h2 class="text-xl font-bold">NEW15</h2>
+                            <p>Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-pink-400 rounded-xl">
+                        <div class="py-16 px-8">
+                            <h2 class="text-4xl font-bold">15% OFF</h2>
+                            <p class="text-2xl font-bold">on your next purchase</p>
+                            <p>use by June 2024</p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div class="py-24 px-8">
+                            <h2 class="text-xl font-bold">Couple 20</h2>
+                            <p>Coupon Code</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex bg-pink-400 rounded-xl">
-                    <div class="py-16 px-8">
-                        <h2 class="text-4xl font-bold">15% OFF</h2>
-                        <p class="text-2xl font-bold">on your next purchase</p>
-                        <p>use by June 2024</p>
-                    </div>
-                    <img src="images/cupon-devider.png" alt="">
-                    <div class="py-24 px-8">
-                        <h2 class="text-xl font-bold">Couple 20</h2>
-                        <p>Coupon Code</p>
-                    </div>
-                </div>
-            </div>
-            <button id="btn-see-all" class="p-2 font-bold rounded-lg">See All offers</button>
+                <button id="btn-see-all" class="p-2 font-bold rounded-lg">See All offers</button>
+            </section>
         </section>
         <!-- P.H Poribohon Section -->
-        <section class="mt-12 bg-gray-200 rounded-lg p-4">
+        <!-- P.H  P.H P.H  P.H P.H      P.H P.H P.H P.H P.H P.H P.H -->
+        <section id="ticket-section" class="mt-12 bg-gray-200 rounded-lg p-4">
             <div class="text-center mt-12">
                 <h1 class="text-6xl font-bold">P.H Paribahan</h1>
                 <p class="text-xl text-gray-500 my-8">There are various offers on receiving PH Transport
@@ -123,7 +129,7 @@
                     <p class="font-bold text-lg">Per Seat</p>
                 </div>
             </div>
-            <!-- Select Your Seat -->
+            <!-- Select Your Seat left -->
             <div id="select-your-seat" class="flex gap-6 bg-white mt-8 rounded-2xl p-6">
                 <div>
                     <h3 class="text-2xl font-bold mb-2">Select Your Seat</h3>
@@ -141,57 +147,57 @@
                             <p>A</p>
                         </div>
                         <div id="ticket">
-                            <p>A1</p>
+                            <p class="btn-icon">A1</p>
                         </div>
                         <div id="ticket">
-                            <p>A2</p>
+                            <p class="btn-icon">A2</p>
                         </div>
                         <div id="ticket">
-                            <p>A3</p>
+                            <p class="btn-icon">A3</p>
                         </div>
                         <div id="ticket">
-                            <p>A4</p>
+                            <p class="btn-icon">A4</p>
                         </div>
                         <div id="ticket-serial">
                             <p>B</p>
                         </div>
                         <div id="ticket">
-                            <p>B1</p>
+                            <p class="btn-icon">B1</p>
                         </div>
                         <div id="ticket">
-                            <p>B2</p>
+                            <p class="btn-icon">B2</p>
                         </div>
                         <div id="ticket">
-                            <p>B3</p>
+                            <p class="btn-icon">B3</p>
                         </div>
                         <div id="ticket">
-                            <p>B4</p>
+                            <p class="btn-icon">B4</p>
                         </div>
                         <div id="ticket-serial">
                             <p>C</p>
                         </div>
                         <div id="ticket">
-                            <p>C1</p>
+                            <p class="btn-icon">C1</p>
                         </div>
                         <div id="ticket">
-                            <p>C2</p>
+                            <p class="btn-icon">C2</p>
                         </div>
                         <div id="ticket">
-                            <p>C3</p>
+                            <p class="btn-icon">C3</p>
                         </div>
                         <div id="ticket">
-                            <p>C4</p>
+                            <p> class="btn-icon"C4</p>
                         </div>
 
                     </div>
                 </div>
-                <!-- Select Your Seat Apply -->
+                <!-- Select Your Seat right Apply -->
                 <div class="border-l-2 border-dashed border-gray-400 pl-4">
                     <h3 class="text-2xl font-bold mb-2">Select Your Seat</h3>
                     <div class="border-b-2 border-dashed border-gray-400"></div>
                     <div class="bg-gray-200 p-4">
                         <div id="seat-class-price" class="flex mb-2">
-                            <p>Seat <span id="seat-0">0</span></p>
+                            <p>Seat <span id="current-score">0</span></p>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
@@ -229,7 +235,8 @@
 
         </section>
     </main>
-
+    <script src="bus-ticket.js"></script>
+    <script src="alfha.js"></script>
 </body>
 
 </html>
