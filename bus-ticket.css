@@ -49,8 +49,10 @@
     justify-content: space-between;
 }
 
-#seat-0 {
+#seat-zero {
     background-color: lime;
+    padding-left: 4px;
+    padding-right: 4px;
     color: white;
 }
 
