@@ -33,6 +33,15 @@ for (const btn of allBtn) {
 // select ticket seat//
 
 
-function handleClick (event) {
-    console.log(event.target.parentNode.parentNode.childNode);
+// function handleClick (event) {
+//     console.log(event.target.parentNode.parentNode.childNodes[5].innerText);
+// }
+
+const allDiv = document.getElementsByClassName("seat-btn-icon");
+console.log(allDiv);
+
+for (const div of allDiv) {
+  div.addEventListener("click", function(){
+    console.log("boss ok")
+  })
 }
