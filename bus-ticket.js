@@ -16,15 +16,15 @@ function play() {
 
 
 
-const allBtn = document.getElementsByClassName("btn-icon");
-let count = 0;
+// const allBtn = document.getElementsByClassName("btn-icon");
+// let count = 0;
 
-for (const btn of allBtn) {
-    btn.addEventListener("click", function (e) {
-        count = count + 1;
-        // setInnerText("cart-count", count);
-    });
-}
+// for (const btn of allBtn) {
+//     btn.addEventListener("click", function (e) {
+//         count = count + 1;
+//         setInnerText("cart-count", count);
+//     });
+// }
 
 // function setInnerText(id, value){
 //     document.getElementById(id).innerText = value;
@@ -38,10 +38,11 @@ for (const btn of allBtn) {
 // }
 
 const allDiv = document.getElementsByClassName("seat-btn-icon");
-console.log(allDiv);
+let count = 0;
 
 for (const div of allDiv) {
   div.addEventListener("click", function(){
-    console.log("boss ok")
+    count = count + 1;
+    console.log(count)
   })
 }
