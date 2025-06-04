@@ -22,10 +22,17 @@ let count = 0;
 for (const btn of allBtn) {
     btn.addEventListener("click", function (e) {
         count = count + 1;
-        setInnerText("cart-count", count);
+        // setInnerText("cart-count", count);
     });
 }
 
-function setInnerText(id, value){
-    document.getElementById(id).innerText = value;
+// function setInnerText(id, value){
+//     document.getElementById(id).innerText = value;
+// }
+
+// select ticket seat//
+
+
+function handleClick (event) {
+    console.log(event.target.parentNode.parentNode.childNode);
 }
