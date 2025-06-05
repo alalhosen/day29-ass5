@@ -37,8 +37,22 @@ for (const div of allDiv) {
   div.addEventListener("click", function (event) {
     count = count + 1;
 
-const seatNumber = event.target.innerText
-console.log(event.target)
+const seatNumber = event.target.innerText;
+
+const seatPrice = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[5].childNodes[3].innerText;
+
+const selectedContainer = document.getElementById("selected-price-container");
+
+const li = document.createElement("li");
+
+const p = document.createElement("p");
+p.innerText = seatNumber;
+const p2 = document.createElement("p");
+p2.innerText = seatPrice;
+
+li.appendChild(p)
+li.appendChild(p2)
+selectedContainer.appendChild(li);
 
     setInnerText("seat-count", count)
   });
