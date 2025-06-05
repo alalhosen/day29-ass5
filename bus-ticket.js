@@ -36,7 +36,7 @@ let count = 0;
 for (const div of allDiv) {
   div.addEventListener("click", function () {
     count = count + 1;
-    setInnerText("seat-zero", count)
+    setInnerText("seat-count", count)
   });
 }
 
