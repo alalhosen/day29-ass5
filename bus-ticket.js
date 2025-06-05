@@ -34,8 +34,12 @@ const allDiv = document.getElementsByClassName("seat-btn-icon");
 let count = 0;
 
 for (const div of allDiv) {
-  div.addEventListener("click", function () {
+  div.addEventListener("click", function (event) {
     count = count + 1;
+
+const seatNumber = event.target.innerText
+console.log(event.target)
+
     setInnerText("seat-count", count)
   });
 }
