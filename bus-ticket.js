@@ -55,7 +55,10 @@ li.appendChild(p2)
 selectedContainer.appendChild(li);
 
 const totalCost = document.getElementById("total-price").innerText
-console.log(typeof parseInt(totalCost))
+
+const convertedTotalCost = parseInt(totalCost)
+document.getElementById("total-price").innerText=convertedTotalCost + seatPrice;
+
 
     setInnerText("seat-count", count)
   });
