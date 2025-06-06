@@ -76,3 +76,8 @@
     width: 13em;
     border-radius: 5px;
 }
+li{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+}

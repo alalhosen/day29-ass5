@@ -1,4 +1,4 @@
-const currentScoreElement = document.getElementById('current-score');
+// const currentScoreElement = document.getElementById('current-score');
 // const currentScoreText = currentScoreElement.innerText;
 // const currentScore = parseInt(currentScoreText);
 // console.log(currentScore);
