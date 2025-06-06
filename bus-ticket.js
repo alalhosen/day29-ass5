@@ -54,6 +54,9 @@ li.appendChild(p)
 li.appendChild(p2)
 selectedContainer.appendChild(li);
 
+const totalCost = document.getElementById("total-price").innerText
+console.log(typeof parseInt(totalCost))
+
     setInnerText("seat-count", count)
   });
 }
