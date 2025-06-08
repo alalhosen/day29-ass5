@@ -61,8 +61,9 @@ for (const div of allDiv) {
     const totalCost = document.getElementById("total-price").innerText;
 
     const convertedTotalCost = parseInt(totalCost);
+    
     document.getElementById("total-price").innerText =
-      convertedTotalCost + parseInt(seatPrice);
+    
 
     setInnerText("seat-count", count);
   });
