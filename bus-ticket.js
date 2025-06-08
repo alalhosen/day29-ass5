@@ -37,34 +37,37 @@ for (const div of allDiv) {
   div.addEventListener("click", function (event) {
     count = count + 1;
 
-const seatNumber = event.target.innerText;
+    const seatNumber = event.target.innerText;
 
-const seatPrice = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[5].childNodes[3].innerText;
+    const seatPrice =
+      event.target.parentNode.parentNode.parentNode.parentNode.parentNode
+        .childNodes[5].childNodes[5].childNodes[3].innerText;
 
-const selectedContainer = document.getElementById("selected-price-container");
+    const selectedContainer = document.getElementById(
+      "selected-price-container"
+    );
 
-const li = document.createElement("li");
+    const li = document.createElement("li");
 
-const p = document.createElement("p");
-p.innerText = seatNumber;
-const p2 = document.createElement("p");
-p2.innerText = seatPrice;
+    const p = document.createElement("p");
+    p.innerText = seatNumber;
+    const p2 = document.createElement("p");
+    p2.innerText = seatPrice;
 
-li.appendChild(p)
-li.appendChild(p2)
-selectedContainer.appendChild(li);
+    li.appendChild(p);
+    li.appendChild(p2);
+    selectedContainer.appendChild(li);
 
-const totalCost = document.getElementById("total-price").innerText
+    const totalCost = document.getElementById("total-price").innerText;
 
-const convertedTotalCost = parseInt(totalCost)
-document.getElementById("total-price").innerText=convertedTotalCost + seatPrice;
+    const convertedTotalCost = parseInt(totalCost);
+    document.getElementById("total-price").innerText =
+      convertedTotalCost + parseInt(seatPrice);
 
-
-    setInnerText("seat-count", count)
+    setInnerText("seat-count", count);
   });
 }
 
-
 function setInnerText(id, value) {
-document.getElementById(id).innerText = value;
+  document.getElementById(id).innerText = value;
 }
