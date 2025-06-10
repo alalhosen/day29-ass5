@@ -59,13 +59,12 @@ for (const div of allDiv) {
     selectedContainer.appendChild(li);
 
     const totalCost = document.getElementById("total-price").innerText;
-
     const convertedTotalCost = parseInt(totalCost);
     const sum = convertedTotalCost + parseInt(seatPrice);
 
     const grandTotal = document.getElementById("grand-total").innerText;
     const convertedGrandTotal = parseInt(grandTotal);
-    const sum2 = convertedGrandTotal + sum;
+    const sum2 = convertedGrandTotal + parseInt(seatPrice);
     // console.log(sum2)
 
     setInnerText("total-price", sum);
@@ -76,5 +75,5 @@ for (const div of allDiv) {
 }
 
 function setInnerText(id, value) {
-  document.getElementById(id).innerText = value;
+  document.getElementById(id).innerText = value; 
 }
