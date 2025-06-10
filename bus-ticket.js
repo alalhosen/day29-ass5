@@ -66,9 +66,10 @@ for (const div of allDiv) {
     const grandTotal = document.getElementById("grand-total").innerText;
     const convertedGrandTotal = parseInt(grandTotal);
     const sum2 = convertedGrandTotal + sum;
-    console.log(sum2)
+    // console.log(sum2)
 
-    setInnerText("total-price", sum)
+    setInnerText("total-price", sum);
+    setInnerText("grand-total", sum2);
 
     setInnerText("seat-count", count);
   });
