@@ -82,11 +82,12 @@ function setInnerText(id, value) {
 
 
 
-function totalCost (id,) {
+function totalCost (id, value) {
   const totalCost = document.getElementById(id).innerText;
     const convertedTotalCost = parseInt(totalCost);
-    // const sum = convertedTotalCost + parseInt(seatPrice);
+    const sum = convertedTotalCost + parseInt(value);
   // setInnerText("total-price", sum);
+  console.log(sum);
 }
 
-totalCost("total-cost");
+totalCost("total-cost", "200");
