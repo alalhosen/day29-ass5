@@ -86,8 +86,7 @@ function totalCost (id, value) {
   const totalCost = document.getElementById(id).innerText;
     const convertedTotalCost = parseInt(totalCost);
     const sum = convertedTotalCost + parseInt(value);
-  // setInnerText("total-price", sum);
-  console.log(sum);
+  setInnerText("total-price", sum);
 }
 
 totalCost("total-cost", "200");
