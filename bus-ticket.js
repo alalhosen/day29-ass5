@@ -85,8 +85,8 @@ function totalCost(id, value) {
 }
 
 function grandTotalCost() {
-  // const totalCost = document.getElementById("grand-total").innerText;
-  // const convertedTotalCost = parseInt(totalCost);
+  const totalCost = document.getElementById("total-cost").innerText;
+  const convertedTotalCost = parseInt(totalCost);
   // setInnerText("grand-total", sum);
 }
 
