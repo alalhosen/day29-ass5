@@ -61,39 +61,34 @@ for (const div of allDiv) {
     // const totalCost = document.getElementById("total-price").innerText;
     // const convertedTotalCost = parseInt(totalCost);
     // const sum = convertedTotalCost + parseInt(seatPrice);
-totalCost("total-price", parseInt(seatPrice))
+    totalCost("total-price", parseInt(seatPrice));
 
-    const grandTotal = document.getElementById("grand-total").innerText;
-    const convertedGrandTotal = parseInt(grandTotal);
-    const sum2 = convertedGrandTotal + parseInt(seatPrice);
-    // console.log(sum2)
+    // const grandTotal = document.getElementById("grand-total").innerText;
+    // const convertedGrandTotal = parseInt(grandTotal);
+    // const sum2 = convertedGrandTotal + parseInt(seatPrice);
 
-    setInnerText("grand-total", sum2);
-    
+    grandTotalCost("grand-total", parseInt(seatPrice));
+
     setInnerText("seat-count", count);
   });
 }
 
-
 function setInnerText(id, value) {
-  document.getElementById(id).innerText = value; 
+  document.getElementById(id).innerText = value;
 }
 
-
-
-
-function totalCost (id, value) {
+function totalCost(id, value) {
   const totalCost = document.getElementById(id).innerText;
-    const convertedTotalCost = parseInt(totalCost);
-    const sum = convertedTotalCost + parseInt(value);
+  const convertedTotalCost = parseInt(totalCost);
+  const sum = convertedTotalCost + parseInt(value);
   setInnerText("total-price", sum);
 }
 
-function totalCost (id, value) {
+function grandTotalCost(id, value) {
   const totalCost = document.getElementById(id).innerText;
-    const convertedTotalCost = parseInt(totalCost);
-    const sum = convertedTotalCost + parseInt(value);
-  setInnerText("total-price", sum);
+  const convertedTotalCost = parseInt(totalCost);
+  const sum = convertedTotalCost + parseInt(value);
+  setInnerText("grand-total", sum);
 }
 
 totalCost("total-cost", "200");
