@@ -85,9 +85,13 @@ function totalPrice(id, value) {
 }
 
 function grandTotalCost(category) {
-  console.log(category)
   const totalPrice = document.getElementById("total-price").innerText;
   const convertedTotalCost = parseInt(totalPrice);
-  setInnerText("grand-total", convertedTotalCost);
+  
+if (category=== "new15") {
+  setInnerText("grand-total", convertedTotalCost-15);
+
+}
+
 }
 
