@@ -84,7 +84,8 @@ function totalPrice(id, value) {
   setInnerText("total-price", sum);
 }
 
-function grandTotalCost() {
+function grandTotalCost(category) {
+  console.log(category)
   const totalPrice = document.getElementById("total-price").innerText;
   const convertedTotalCost = parseInt(totalPrice);
   setInnerText("grand-total", convertedTotalCost);
