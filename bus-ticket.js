@@ -90,7 +90,12 @@ function grandTotalCost(category) {
   
 if (category=== "new15") {
   setInnerText("grand-total", convertedTotalCost-15);
-
+}
+else if (category === "couple20") {
+  setInnerText("grand-total", convertedTotalCost-20)
+}
+else{
+  setInnerText ("grand-total", convertedTotalCost)
 }
 
 }
