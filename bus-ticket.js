@@ -56,16 +56,20 @@ for (const div of allDiv) {
 
     li.appendChild(p);
     li.appendChild(p2);
+
+    const seat40 = document.getElementById("seat40").innerText;
+    const convertedSeat40 = parseInt(seat40);
+    document.getElementById("seat40").innerText = convertedSeat40 - 1;
+
+    const seatLimitCount =
+      document.getElementById("seat-limit-count").innerText;
+    const convertedSeatLimit = parseInt(seatLimitCount);
+    document.getElementById("seat-limit-count").innerText =
+      convertedSeatLimit - 1;
+
     selectedContainer.appendChild(li);
 
-    // const totalCost = document.getElementById("total-price").innerText;
-    // const convertedTotalCost = parseInt(totalCost);
-    // const sum = convertedTotalCost + parseInt(seatPrice);
     totalPrice("total-price", parseInt(seatPrice));
-
-    // const grandTotal = document.getElementById("grand-total").innerText;
-    // const convertedGrandTotal = parseInt(grandTotal);
-    // const sum2 = convertedGrandTotal + parseInt(seatPrice);
 
     grandTotalCost("grand-total", parseInt(seatPrice));
 
@@ -87,16 +91,12 @@ function totalPrice(id, value) {
 function grandTotalCost(category) {
   const totalPrice = document.getElementById("total-price").innerText;
   const convertedTotalCost = parseInt(totalPrice);
-  
-if (category=== "new15") {
-  setInnerText("grand-total", convertedTotalCost-15);
-}
-else if (category === "couple20") {
-  setInnerText("grand-total", convertedTotalCost-20)
-}
-else{
-  setInnerText ("grand-total", convertedTotalCost)
-}
 
+  if (category === "new15") {
+    setInnerText("grand-total", convertedTotalCost - 15);
+  } else if (category === "couple20") {
+    setInnerText("grand-total", convertedTotalCost - 20);
+  } else {
+    setInnerText("grand-total", convertedTotalCost);
+  }
 }
-
