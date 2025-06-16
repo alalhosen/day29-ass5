@@ -54,7 +54,8 @@ for (const div of allDiv) {
     const p2 = document.createElement("p");
     p2.innerText = seatPrice;
 
-    event.target.parentNode.style.backgroundColor = "gray";
+    event.target.parentNode.style.backgroundColor = "green"
+    
 
     li.appendChild(p);
     li.appendChild(p2);
