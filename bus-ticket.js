@@ -54,6 +54,8 @@ for (const div of allDiv) {
     const p2 = document.createElement("p");
     p2.innerText = seatPrice;
 
+    event.target.parentNode.style.backgroundColor = "gray";
+
     li.appendChild(p);
     li.appendChild(p2);
 
@@ -61,11 +63,17 @@ for (const div of allDiv) {
     const convertedSeat40 = parseInt(seat40);
     document.getElementById("seat40").innerText = convertedSeat40 - 1;
 
+    
     const seatLimitCount =
-      document.getElementById("seat-limit-count").innerText;
+    document.getElementById("seat-limit-count").innerText;
     const convertedSeatLimit = parseInt(seatLimitCount);
     document.getElementById("seat-limit-count").innerText =
-      convertedSeatLimit - 1;
+    convertedSeatLimit - 1;
+    
+    if (convertedSeatLimit <1) {
+      alert("Don't over the limit. Please apply coupon.")
+      return;
+    }
 
     selectedContainer.appendChild(li);
 
