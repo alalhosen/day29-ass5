@@ -59,6 +59,7 @@ for (const div of allDiv) {
 
     li.appendChild(p);
     li.appendChild(p2);
+    
 
     const seat40 = document.getElementById("seat40").innerText;
     const convertedSeat40 = parseInt(seat40);
