@@ -255,26 +255,24 @@
                         </div>
                         <div>
                             <input class="bg-white" type="text" placeholder="Have any Coupon">
-                            <button id="apply" class="btn btn-primary text-white text-lg">Apply</button>
+                            <button id="apply" class="btn btn-primary text-white w-24">Apply</button>
                         </div>
                         <div class="grand-total">
                             <p>Grand Total :</p>
                             <p>BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
-                    <div class="py-4">
+                    <div class="py-4 my-4">
                         <p>Passenger Name</p>
-                        <input class="input" type="text" placeholder="Enter your name">
-                        <p>Phone Number</p>
-                        <input class="input" type="number" placeholder="Enter your phone number">
-                        <p>Email ID</p>
-                        <input class="input" type="text" placeholder="Enter your email id">
+                        <input class="input w-full" type="text" placeholder="Enter your name">
+                        <p class="mt-2">Phone Number</p>
+                        <input class="input w-full" type="number" placeholder="Enter your phone number">
+                        <p class="mt-2">Email ID</p>
+                        <input class="input w-full" type="text" placeholder="Enter your email id">
                     </div>
-                    <button id="btn-next">Next</button>
+                    <button id="btn-next" class="w-full">Next</button>
 
-                    <button class="btn bg-red-400">submit</button>
-
-                    <div class="flex ">
+                    <div class="flex underline justify-between">
                         <p>Terms and Conditions</p>
                         <p>Cancellation Policy</p>
                     </div>
@@ -333,13 +331,14 @@
 
 
         <!-- section Success -->
-        <section class="bg-gray-200 mb-12 p-36">
-            <div id="success-page" class="text-center rounded-2xl align-middle bg-white w-1/2 border-2 border-solid border-gray-600">
-                <p class="text-green-500 text-2xl font-bold">Success</p>
+        <section class="bg-gray-200 mb-12 justify-items-center py-4">
+            <div id="success-page" class="text-center rounded-2xl align-middle bg-white justify-items-center w-2/3 p-4 border-2 border-solid border-gray-600">
+                <img class="" src="images/success.png" alt="">
+                <p class="text-green-500 text-2xl font-bold py-8">Success</p>
                 <h3 class="font-bold text-xl">Thank you for Booking Our Bus Seats. We are working hard to find the best
                     service and deals for you.
                 </h3>
-                <h2>Shortly you will find a confirmation</h2>
+                <h2 class="py-4">Shortly you will find a confirmation</h2>
                 <button class="btn w-28 bg-green-500">Continue</button>
             </div>
         </section>
