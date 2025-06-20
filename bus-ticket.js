@@ -110,3 +110,22 @@ function grandTotalCost(category) {
     setInnerText("grand-total", convertedTotalCost);
   }
 }
+
+
+ //**Success function section
+
+function success() {
+  const homeScreen = document.getElementById("home-screen");
+  homeScreen.classList.add('hidden');
+
+  const success = document.getElementById('success');
+  success.classList.remove('hidden')
+}
+
+function continueBtn() {
+  const homeScreen = document.getElementById('home-screen');
+  homeScreen.classList.remove('hidden');
+
+  const success = document.getElementById('success');
+  success.classList.add('hidden')
+}

@@ -82,7 +82,5 @@ li{
 }
 
 #success-page {
-    /* align-items: center; */
-    /* justify-items: center; */
     justify-content: end;
 }
