@@ -81,3 +81,9 @@ li{
     justify-content: space-between;
     color: blue;
 }
+
+#success-page {
+    /* align-items: center; */
+    /* justify-items: center; */
+    justify-content: end;
+}
