@@ -42,10 +42,10 @@ for (const div of allDiv) {
     const seatPrice =
       event.target.parentNode.parentNode.parentNode.parentNode.parentNode
         .childNodes[5].childNodes[5].childNodes[3].innerText;
-
-    const selectedContainer = document.getElementById(
-      "selected-price-container"
-    );
+        
+        const selectedContainer = document.getElementById(
+          "selected-price-container"
+        );
 
     const li = document.createElement("li");
 
