@@ -39,10 +39,11 @@ for (const div of allDiv) {
 
     const seatNumber = event.target.innerText;
 
-    const seatPrice =
-      event.target.parentNode.parentNode.parentNode.parentNode.parentNode
-        .childNodes[5].childNodes[5].childNodes[3].innerText;
-        
+    // const seatPrice =
+    //   event.target.parentNode.parentNode.parentNode.parentNode.parentNode
+    //     .childNodes[5].childNodes[5].childNodes[3].innerText;
+    console.log(event.target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes)    
+
         const selectedContainer = document.getElementById(
           "selected-price-container"
         );
