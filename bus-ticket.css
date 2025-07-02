@@ -82,3 +82,6 @@ li{
 #success-page {
     justify-content: end;
 }
+#footer {
+    justify-content: space-between;
+}
