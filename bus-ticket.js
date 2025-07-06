@@ -37,19 +37,24 @@ for (const div of allDiv) {
   div.addEventListener("click", function (event) {
     count = count + 1;
 
-    const seatNumber = event.target.innerText;
+    // const seatNumber = event.target.innerText;
 
     // const seatPrice =
     //   event.target.parentNode.parentNode.parentNode.parentNode.parentNode
     //     .childNodes[5].childNodes[5].childNodes[3].innerText;
-    
-const seatPrice = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[9].childNodes[1].childNodes[13].childNodes[3].childNodes[1].innerText;
 
-    console.log()    
+    const seatNumber =
+      event.target.parentNode.parentNode.parentNode.parentNode.childNodes[9]
+        .childNodes[1].childNodes[13].childNodes[3].childNodes[1].innerText;
 
-        const selectedContainer = document.getElementById(
-          "selected-price-container"
-        );
+        const seatPrice = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5]
+        .childNodes[3].childNodes[3].childNodes[3].childNodes[0].innerText
+
+
+
+    const selectedContainer = document.getElementById(
+      "selected-price-container"
+    );
 
     const li = document.createElement("li");
 
@@ -58,26 +63,23 @@ const seatPrice = event.target.parentNode.parentNode.parentNode.parentNode.child
     const p2 = document.createElement("p");
     p2.innerText = seatPrice;
 
-    event.target.parentNode.style.backgroundColor = "green"
-    
+    event.target.parentNode.style.backgroundColor = "green";
 
     li.appendChild(p);
     li.appendChild(p2);
-    
 
     const seat40 = document.getElementById("seat40").innerText;
     const convertedSeat40 = parseInt(seat40);
     document.getElementById("seat40").innerText = convertedSeat40 - 1;
 
-    
     const seatLimitCount =
-    document.getElementById("seat-limit-count").innerText;
+      document.getElementById("seat-limit-count").innerText;
     const convertedSeatLimit = parseInt(seatLimitCount);
     document.getElementById("seat-limit-count").innerText =
-    convertedSeatLimit - 1;
-    
-    if (convertedSeatLimit <1) {
-      alert("Don't over the limit. Please apply coupon.")
+      convertedSeatLimit - 1;
+
+    if (convertedSeatLimit < 1) {
+      alert("Don't over the limit. Please apply coupon.");
       return;
     }
 
@@ -115,21 +117,20 @@ function grandTotalCost(category) {
   }
 }
 
-
- //**Success function section
+//**Success function section
 
 function success() {
   const homeScreen = document.getElementById("home-screen");
-  homeScreen.classList.add('hidden');
+  homeScreen.classList.add("hidden");
 
-  const success = document.getElementById('success');
-  success.classList.remove('hidden')
+  const success = document.getElementById("success");
+  success.classList.remove("hidden");
 }
 
 function continueBtn() {
-  const homeScreen = document.getElementById('home-screen');
-  homeScreen.classList.remove('hidden');
+  const homeScreen = document.getElementById("home-screen");
+  homeScreen.classList.remove("hidden");
 
-  const success = document.getElementById('success');
-  success.classList.add('hidden')
+  const success = document.getElementById("success");
+  success.classList.add("hidden");
 }
