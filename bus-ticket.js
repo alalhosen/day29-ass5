@@ -109,7 +109,7 @@ function grandTotalCost(category) {
   const convertedTotalCost = parseInt(totalPrice);
 
   if (category === "new15") {
-    setInnerText("grand-total", convertedTotalCost - 15);
+    setInnerText("grand-total", convertedTotalCost - (15*2200)/100);
   } else if (category === "couple20") {
     setInnerText("grand-total", convertedTotalCost - (20*2200)/100);
   } else {
